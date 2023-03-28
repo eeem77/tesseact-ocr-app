@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extract words</title>
+</head>
+<style>
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    #btn-clean {
+        background-color: red;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+    }
+    #btn-submit {
+        background-color: green;
+        color: white;
+        font-weight: bolder;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <center>
+        <h1>eeem77</h1>
+        <span>Extract words of a image</span>
+    </center>
+    <hr>
+    <div>    
+        <form action="submit" method="post">
+            <input placeholder="Paste here url image" type="text" name="url" id="url">
+            <input id="btn-submit" type="submit" value="Send">
+            <input id="btn-clean" type="button" value="Clean" onclick="cleanForm()">
+        </form>
+    </div>
+
+    <script>
+        const cleanForm = () => {
+            document.querySelector('#url').value = ''
+        }
+    </script>
+</body>
+
+</html>
